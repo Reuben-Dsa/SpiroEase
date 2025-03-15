@@ -10,7 +10,7 @@ p {
     font-size: 20px;
 }
 header {
-    background-color: #8400ff;
+    background-color: #5B3162ff;
     color: white;
     padding: 10px;
     text-align: center;
@@ -91,7 +91,7 @@ h1 {
 }
 
 h2 {
-    color: #8c00ff;
+    color: rgb(129, 71, 139);
 }
 
 ul {
@@ -109,6 +109,14 @@ ul li::before {
 footer {
     margin-top: 10%;
     padding: 5px;
-    background-color: #c300ff;
+    background-color: #692935ff;
     color: white;
 }
+
+/* CSS HEX
+--black: #030203ff;
+--white: #FFFFFFff;
+--thistle: #EDC8F5ff;
+--tea-rose-red: #FEC6C7ff;
+--finn: #5B3162ff;
+--wine: #692935ff; */
