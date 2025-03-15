@@ -122,3 +122,29 @@ footer {
     background-color: #692935ff;
     color: white;
 }
+/* Responsive Font Size for Mobile */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content, .carousel {
+        width: 90%;
+    }
+
+    .prev, .next {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .tagline {
+        font-size: 24px; /* Reduces font size on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .tagline {
+        font-size: 18px; /* Further reduces font size on mobile phones */
+    }
+}
