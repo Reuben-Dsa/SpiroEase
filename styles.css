@@ -122,38 +122,3 @@ footer {
     background-color: #692935ff;
     color: white;
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .content-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .text-content, .carousel {
-        width: 90%;
-    }
-
-    .prev, .next {
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    .tagline {
-        font-size: 24px; /* Reduces font size on tablets */
-    }
-}
-
-@media (max-width: 480px) {
-    .tagline {
-        font-size: 18px; /* Further reduces font size on mobile phones */
-    }
-}
-
-/* CSS HEX
---black: #030203ff;
---white: #FFFFFFff;
---thistle: #EDC8F5ff;
---tea-rose-red: #FEC6C7ff;
---finn: #5B3162ff;
---wine: #692935ff; */
