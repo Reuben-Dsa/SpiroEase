@@ -119,6 +119,18 @@ h1 {
 .text-content {
     width: 45%;
     text-align: left;
+}.section-heading {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* space between text and image */
+    font-size: 32px;
+    color: #5B3162;
+  }
+  
+  .inline-image {
+    width: 150px;
+    position: relative;
+    bottom: 35px;     /* Moves image down */
 }
 .carousel {
     position: relative;
@@ -257,6 +269,13 @@ footer {
     .info-tiles {
          grid-template-columns: repeat(3, 1fr); /*3 tiles per row */
     }
+    
+    .inline-image {
+        width: 50px;
+        position: relative;
+        bottom: 20px;
+      }
+
     .navbar .nav-links {
         position: absolute;
         top: 70px;
