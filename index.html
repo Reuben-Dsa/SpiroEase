@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spiro-Ease | Accessible Incentive Spirometer</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
     <script defer src="script.js"></script>
 </head>
 <body>
@@ -13,7 +14,17 @@
             <img src="images/logo.jpg" alt="Spiro-Ease Logo" class="logo">
             <h1>Spiro-Ease</h1>
         </div>
-        
+        <nav class="navbar">
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="device.html">Device</a></li>
+              <li><a href="benefits.html">Benefits</a></li>
+              <li><a href="research.html">Research</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">&#9776;</div>
+          </nav>
     </header>
     <div class="tagline">
         Improving lung capacity for the visually impaired and beyond
@@ -45,11 +56,45 @@
             </div>
             <button class="prev" aria-label="Previous">&#10094;</button>
             <button class="next" aria-label="Next">&#10095;</button>
+            <div class="carousel-dots"></div>
         </section>
+    </div>
+    <!-- Info Tiles Section -->
+    <div class="info-tiles">
+        <div class="tile tile1">
+            <h3>About</h3>
+            <p>Short description about this topic.</p>
+            <a href="page1.html" class="read-more">Read More</a>
+        </div>
+        <div class="tile tile2">
+            <h3>Device</h3>
+            <p>Another brief informative text here.</p>
+            <a href="page2.html" class="read-more">Read More</a>
+        </div>
+        <div class="tile tile3">
+            <h3>Benefits</h3>
+            <p>Insightful info about this section.</p>
+            <a href="page3.html" class="read-more">Read More</a>
+        </div>
+        <div class="tile tile4">
+            <h3>Research</h3>
+            <p>Short explanation of the topic.</p>
+            <a href="page4.html" class="read-more">Read More</a>
+        </div>
+        <div class="tile tile5">
+            <h3>Contact</h3>
+            <p>Quick snippet of information here.</p>
+            <a href="page5.html" class="read-more">Read More</a>
+        </div>
+        <!-- <div class="tile tile6">
+            <h3>Title 6</h3>
+            <p>Details about this point briefly.</p>
+            <a href="page6.html" class="read-more">Read More</a>
+        </div> -->
     </div>
 
     <footer>
-        <p>Join us in making respiratory care accessible for all.</p>
+        <p style = "font-family: 'Courier New', Courier, monospace; color: aliceblue;">Join us in making respiratory care accessible for all.</p>
     </footer>
 </body>
 </html>
