@@ -4,6 +4,26 @@ const prevBtn = document.querySelector('.prev');
 const nextBtn = document.querySelector('.next');
 const dotsContainer = document.querySelector('.carousel-dots');
 
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    const navItems = document.querySelectorAll('.nav-links a');
+  
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('active');
+      });
+  
+      navItems.forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+          hamburger.classList.remove('active');
+        });
+      });
+    }
+  });
+  
 let index = 0;
 let interval;
 
@@ -73,10 +93,4 @@ const observer = new IntersectionObserver(entries => {
 
 tiles.forEach(tile => {
     observer.observe(tile);
-});
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
-
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
 });
